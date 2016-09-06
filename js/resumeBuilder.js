@@ -2,13 +2,13 @@ var work = {
     "jobs": [{
         "employer": "Brown Brothers Harriman",
         "title": "Product Designer",
-        "location": "Krakow, Poland",
+        "location": "Kraków",
         "dates": "January 2014 - Now",
         "description": "Prototyping, Visual Design, Interface Design, Interaction Design"
     }, {
         "employer": "Brown Brothers Harriman",
         "title": "Reporting Specialist",
-        "location": "Poland — Luxembourg",
+        "location": "Luxembourg, Kraków",
         "dates": "September 2010 - January 2014",
         "description": "IBM Cognos 10, SAS, Efront, Business analysis"
     }, {
@@ -21,7 +21,7 @@ var work = {
     }, {
         "employer": "Euriware, Amphaz",
         "title": "Reporting Specialist",
-        "location": "France",
+        "location": "Aix-en-Provence",
         "dates": "October 2005 - March 2007",
         "description": "Business Objects, Business analysis"
     }]
@@ -41,13 +41,13 @@ var projects = {
 
 var bio = {
     "name": "Jonathan Gall",
-    "role": "UX Designer",
+    "role": "UX Designer and Front-End Developer",
     "contacts": {
         "mobile": "+48 535 203 086",
         "email": "jonathanonline@gmail.com",
         "github": "odajay",
         "twitter": "@odajay",
-        "location": "Poland"
+        "location": "Kielce"
     },
     "welcomeMessage": "I always loved to solve problems, so I found a way to make a living out of it. I am focusing in rapid prototyping, user experience research and design languages.",
     "skills": ["Rapid Prototyping", "Information Architecture", "Data visualization", "Framer", "HTML/CSS/JS"],
@@ -142,7 +142,7 @@ projects.display = function() {
 projects.display();
 
 
-$(docßument).click(function(loc) {
+$(document).click(function(loc) {
     // your code goes here
     var x = loc.pageX;
     var y = loc.pageY;
@@ -161,4 +161,4 @@ var myInternationalization = internationalizeButton;
 $("#main:last").append(myInternationalization);
 
 
-$('#mapDiv').append(googleMaps);
+$("#mapDiv").append(googleMap);
