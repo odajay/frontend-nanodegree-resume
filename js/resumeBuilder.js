@@ -4,7 +4,7 @@ var work = {
         "title": "Product Designer",
         "location": "Kraków",
         "dates": "January 2014 - Now",
-        "description": "Prototyping of innovative financial application using Framer and Invision. Leading the Visual Design, Interface Design, Interaction Design."
+        "description": "Prototyping of innovative data-centric financial application using Framer and Invision. Leading the Visual Design, Interface Design and Interaction Design."
     }, {
         "employer": "Brown Brothers Harriman",
         "title": "BI Developer",
@@ -101,8 +101,6 @@ bio.display = function() {
     var mybioPic = HTMLbioPic.replace("%data%", bio.biopic);
     var mywelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(mybioPic, mywelcomeMessage);
-
-
 
 
     if (bio.skills.length > 0) {
