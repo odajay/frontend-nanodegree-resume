@@ -7,20 +7,20 @@ var work = {
         "description": "Prototyping of innovative financial application using Framer and Invision. Leading the Visual Design, Interface Design, Interaction Design."
     }, {
         "employer": "Brown Brothers Harriman",
-        "title": "Reporting Specialist",
+        "title": "BI Developer",
         "location": "Luxembourg, Kraków",
         "dates": "September 2010 - January 2014",
         "description": "Development of reports using IBM Cognos 10, SAS, Efront. Business analysis and redaction of specifications."
     }, {
         "employer": "Schroders Investment Management",
-        "title": "Reporting Specialist",
+        "title": "BI Developer",
         "location": "Luxembourg",
         "dates": "March 2007 - September 2010",
         "description": "Development of reports using Business Objects. Business analysis and redaction of specifications."
 
     }, {
         "employer": "Euriware, Amphaz",
-        "title": "Reporting Specialist",
+        "title": "BI Developer",
         "location": "Aix-en-Provence",
         "dates": "October 2005 - March 2007",
         "description": "Development of reports using Business Objects. Business analysis and redaction of specifications."
@@ -153,8 +153,9 @@ work.display = function() {
         var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
         var formattedEmployerTitle = formattedEmployer + formattedTitle;
         var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
+        var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
         var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
-        $(".work-entry:last").append(formattedEmployerTitle, formattedDates, formattedDescription);
+        $(".work-entry:last").append(formattedEmployerTitle, formattedDates, formattedLocation, formattedDescription);
     });
 };
 work.display();
